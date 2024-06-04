@@ -1,0 +1,139 @@
+:root {
+  --cor-dark: #101923;
+  --cor-clara: #f2f8fc;
+  --cor-destaque: #69ccc5;
+  --cor-destaque2: #1d6c86;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--cor-dark);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: var(--cor-clara);
+}
+
+main {
+  width: 80%;
+  min-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0;
+}
+
+.selecaoExercicio {
+  width: 200px;
+  padding: 5px 10px;
+  border-radius: 50px;
+  border: 3px solid var(--cor-destaque2);
+  box-shadow: -5px 5px 0 0 var(--cor-destaque2);
+  outline: none;
+}
+
+.selecaoExercicio:focus {
+  border: 3px solid var(--cor-destaque);
+  box-shadow: -3px 3px 0 0 var(--cor-destaque);
+}
+
+.titulo {
+  margin-bottom: 16px;
+  color: var(--cor-clara);
+  font-size: 32px;
+}
+
+.exercicio {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.exercicioBox {
+  width: 100%;
+  min-height: 50vh;
+  height: auto;
+  border: 2px dotted var(--cor-destaque);
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.exercicioTitulo {
+  font-size: 20px;
+  margin: 16px 0;
+}
+
+.exercicioSolucao {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 32px 16px;
+  gap: 16px;
+}
+
+.inputExercicio {
+  width: 200px;
+  padding: 5px 10px;
+  border-radius: 50px;
+  border: 3px solid var(--cor-destaque2);
+  box-shadow: -5px 5px 0 0 var(--cor-destaque2);
+  outline: none;
+  margin: 16px;
+}
+
+.inputExercicio:focus {
+  border: 3px solid var(--cor-destaque);
+  box-shadow: -3px 3px 0 0 var(--cor-destaque);
+}
+
+.btnExercicio {
+  padding: 5px 10px;
+  border-radius: 50px;
+  background-color: var(--cor-destaque2);
+  color: var(--cor-clara);
+  font-weight: 600;
+  border: none;
+  box-shadow: -3px 3px 0 0 var(--cor-destaque);
+}
+
+.btnExercicio:hover {
+  cursor: pointer;
+  box-shadow: none;
+}
+
+
+
+.resultadoTitulo {
+  font-size: 16px;
+}
+
+.botoesExercicio {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+
+
+
+.oculto {
+  display: none;
+}
+
+.visivel {
+  display: block;
+}
