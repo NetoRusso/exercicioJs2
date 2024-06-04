@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Neto Russo">
+  <title>Exercícios Arrow Functions</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main>
+    <section class="selecao">
+      <h1 class="titulo">Exercícios Arrow Functions</h1>
+      <select name="selecaoExercicio" id="selecaoExercicio" class="selecaoExercicio">
+        <option value="exercicio1">Exercício 01</option>
+        <option value="exercicio2">Exercício 02</option>
+        <option value="exercicio3">Exercício 03</option>
+        <option value="exercicio4">Exercício 04</option>
+        <option value="exercicio5">Exercício 05</option>
+        <option value="exercicio6">Exercício 06</option>
+        <option value="exercicio7">Exercício 07</option>
+        <option value="exercicio8">Exercício 08</option>
+        <option value="exercicio9">Exercício 09</option>
+        <option value="exercicio10">Exercício 10</option>
+        <option value="exercicio11">Exercício 11</option>
+        <option value="exercicio12">Exercício 12</option>
+        <option value="exercicio13">Exercício 13</option>
+        <option value="exercicio14">Exercício 14</option>
+        <option value="exercicio15">Exercício 15</option>
+      </select>
+    </section>
+    <section class="exercicio">
+
+      <div class="exercicioBox visivel" id="exercicio1">
+        <h2 class="exercicioTitulo">Soma de Dois Números</h2>
+        <p class="exercicioDescricao"> - Crie uma arrow function que receba dois números e retorne a soma deles.</p>
+
+        <div class="exercicioSolucao">
+          <h3 class="subtituloExercicio">Número 01:</h3>
+          <input type="text" name="numero01" id="numero1Exercicio1" class="inputExercicio" placeholder="Número 01">
+
+          <h3 class="subtituloExercicio">Número 02:</h3>
+          <input type="text" name="numero02" id="numero2Exercicio1" class="inputExercicio" placeholder="Número 02">
+
+          <button class="btnExercicio" type="button" id="btnExercicio1">Calcular</button>
+          <div class="exercicioResultado">
+            <h3 class="resultadoTitulo">Resultado:</h3>
+            <div class="solucaoResultadoExercicio" id="solucaoResultadoExercicio1"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exercicioBox oculto" id="exercicio2">
+        <h2 class="exercicioTitulo">Quadrado de um Número</h2>
+        <p class="exercicioDescricao"> - Crie uma arrow function que receba um número e retorne o seu quadrado.</p>
+
+        <div class="exercicioSolucao">
+          <h3 class="subtituloExercicio">Número:</h3>
+          <input type="text" name="numero02" id="numero1Exercicio2" class="inputExercicio" placeholder="Número">
+
+          <button class="btnExercicio" type="button" id="btnExercicio2">Calcular</button>
+          <div class="exercicioResultado">
+            <h3 class="resultadoTitulo">Resultado:</h3>
+            <div class="solucaoResultadoExercicio" id="solucaoResultadoExercicio2"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exercicioBox oculto" id="exercicio3">
+        <h2 class="exercicioTitulo">Verificar Maioridade</h2>
+        <p class="exercicioDescricao"> - Crie uma arrow function que receba uma idade e retorne `"Maior de Idade"` se a idade for maior ou igual a 18 e `"Menor de Idade"` caso contrário.</p>
+
+        <div class="exercicioSolucao">
+          <h3 class="subtituloExercicio">Idade:</h3>
+          <input type="number" name="idade03" id="numeroExercicio3" class="inputExercicio" placeholder="Idade" min="0">
+
+          <button class="btnExercicio" type="button" id="btnExercicio3">Calcular</button>
+          <div class="exercicioResultado">
+            <h3 class="resultadoTitulo">Resultado:</h3>
+            <div class="solucaoResultadoExercicio" id="solucaoResultadoExercicio3"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exercicioBox oculto" id="exercicio4">
+        <h2 class="exercicioTitulo">Calcular Área do Retângulo</h2>
+        <p class="exercicioDescricao"> - Crie uma arrow function que receba a largura e a altura de um retângulo e retorne a área.</p>
+
+        <div class="exercicioSolucao">
+          <h3 class="subtituloExercicio">Largura em cm:</h3>
+          <input type="text" name="numeroLargura04" id="larguraExercicio4" class="inputExercicio" placeholder="Largura" min="0">
+          <h3 class="subtituloExercicio">Altura em cm:</h3>
+          <input type="text" name="numeroAltura04" id="alturaExercicio4" class="inputExercicio" placeholder="Altura" min="0">
+
+          <button class="btnExercicio" type="button" id="btnExercicio4">Calcular</button>
+          <div class="exercicioResultado">
+            <h3 class="resultadoTitulo">Resultado:</h3>
+            <div class="solucaoResultadoExercicio" id="solucaoResultadoExercicio4"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exercicioBox oculto" id="exercicio5">
+        <h2 class="exercicioTitulo">Convertendo para Maiúsculas</h2>
+        <p class="exercicioDescricao"> - Crie uma arrow function que receba uma string e a retorne em maiúsculas.</p>
+        <div class="exercicioSolucao">
+          <h3 class="subtituloExercicio">Escreva a sua frase:</h3>
+          <input type="text" name="texto05" id="textoExercicio5" class="inputExercicio" placeholder="Frase">
+          <button class="btnExercicio" type="button" id="btnExercicio5">Calcular</button>
+          <div class="exercicioResultado">
+            <h3 class="resultadoTitulo">Resultado:</h3>
+            <div class="solucaoResultadoExercicio" id="solucaoResultadoExercicio5"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exercicioBox oculto" id="exercicio6">
+        <h2 class="exercicioTitulo">Filtrar Números Pares</h2>
+        <p class="exercicioDescricao"> - Crie uma arrow function que receba um array de números e retorne um novo array contendo apenas os números pares.</p>
+        <div class="exercicioSolucao">
+          <h3 class="subtituloExercicio">Insira um novo número:</h3>
+          <input type="number" name="numero06" id="numeroExercicio6" class="inputExercicio" placeholder="Novo número">
+          <div class="botoesExercicio">
+            <button class="btnExercicio" type="button" id="btnExercicio6">Inserir</button>
+            <button class="btnExercicio" type="button" id="btnExercicio6reset">Resetar</button>
+          </div>
+
+          <div class="exercicioResultado">
+            <h3 class="resultadoTitulo">Resultado:</h3>
+            <div class="solucaoResultadoExercicio" id="solucaoResultadoExercicio6"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exercicioBox oculto" id="exercicio7">
+        <h2 class="exercicioTitulo">Calcular Média</h2>
+        <p class="exercicioDescricao"> - Crie uma arrow function que receba um array de números e retorne a média dos números.</p>
+        <div class="exercicioSolucao">
+          <h3 class="subtituloExercicio">Insira um novo número:</h3>
+          <input type="text" name="numero07" id="numeroExercicio7" class="inputExercicio" placeholder="Novo número">
+          <div class="botoesExercicio">
+            <button class="btnExercicio" type="button" id="btnExercicio7">Inserir</button>
+            <button class="btnExercicio" type="button" id="btnExercicio7reset">Resetar</button>
+          </div>
+
+          <div class="exercicioResultado">
+            <h3 class="resultadoTitulo">Resultado:</h3>
+            <div class="solucaoResultadoExercicio" id="solucaoResultadoExercicio7"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exercicioBox oculto" id="exercicio8">
+        <h2 class="exercicioTitulo">Verificar Palíndromo</h2>
+        <p class="exercicioDescricao"> - Crie uma arrow function que receba uma string e retorne `true` se for um palíndromo e `false` caso contrário.</p>
+        <div class="exercicioSolucao">
+          <h3 class="subtituloExercicio">Insira a frase:</h3>
+          <input type="text" name="frase08" id="textoExercicio8" class="inputExercicio" placeholder="Frase">
+
+          <button class="btnExercicio" type="button" id="btnExercicio8">verificar</button>
+
+          <div class="exercicioResultado">
+            <h3 class="resultadoTitulo">Resultado:</h3>
+            <div class="solucaoResultadoExercicio" id="solucaoResultadoExercicio8"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exercicioBox oculto" id="exercicio9">
+        <h2 class="exercicioTitulo">Dobrar Valores</h2>
+        <p class="exercicioDescricao"> - Crie uma arrow function que receba um array de números e retorne um novo array com cada valor dobrado.</p>
+        <div class="exercicioSolucao">
+          <h3 class="subtituloExercicio">Insira novo número:</h3>
+          <input type="text" name="numero09" id="numeroExercicio9" class="inputExercicio" placeholder="Número">
+
+          <div class="botoesExercicio">
+            <button class="btnExercicio" type="button" id="btnExercicio9">Dobrar</button>
+            <button class="btnExercicio" type="button" id="btnExercicio9Resetar">Resetar</button>
+
+          </div>
+
+          <div class="exercicioResultado">
+            <h3 class="resultadoTitulo">Resultado:</h3>
+            <div class="solucaoResultadoExercicio" id="solucaoResultadoExercicio9"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exercicioBox oculto" id="exercicio10">
+        <h2 class="exercicioTitulo">Calcular Fatorial</h2>
+        <p class="exercicioDescricao"> -Crie uma arrow function que receba um número e retorne o seu fatorial.</p>
+        <div class="exercicioSolucao">
+          <h3 class="subtituloExercicio">Número:</h3>
+          <input type="number" name="numero10" id="numeroExercicio10" class="inputExercicio" placeholder="Número">
+
+          <button class="btnExercicio" type="button" id="btnExercicio10">Calcular</button>
+
+          <div class="exercicioResultado">
+            <h3 class="resultadoTitulo">Resultado:</h3>
+            <div class="solucaoResultadoExercicio" id="solucaoResultadoExercicio10"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exercicioBox oculto" id="exercicio11">
+        <h2 class="exercicioTitulo">Matriz Transposta</h2>
+        <p class="exercicioDescricao"> -Crie uma arrow function que receba uma matriz (array de arrays) e retorne a sua transposta.</p>
+        <div class="exercicioSolucao">
+          <h3 class="subtituloExercicio">Array Matriz:</h3>
+          <!-- <input type="number" name="numero10" id="numeroExercicio11" class="inputExercicio" placeholder="Número"> -->
+
+          <p class="textoExercicio" id="textoExercicio11"></p>
+
+          <button class="btnExercicio" type="button" id="btnExercicio11">Exibir</button>
+
+          <div class="exercicioResultado">
+            <h3 class="resultadoTitulo">Resultado:</h3>
+            <div class="solucaoResultadoExercicio" id="solucaoResultadoExercicio11"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exercicioBox oculto" id="exercicio12">
+        <h2 class="exercicioTitulo">Remover Duplicatas</h2>
+        <p class="exercicioDescricao"> -Crie uma arrow function que receba um array e retorne um novo array sem elementos duplicados.</p>
+        <div class="exercicioSolucao">
+          <h3 class="subtituloExercicio">Array Original:</h3>
+          <!-- <input type="number" name="numero10" id="numeroExercicio12" class="inputExercicio" placeholder="Número"> -->
+
+          <p class="textoExercicio" id="textoExercicio12"></p>
+
+          <button class="btnExercicio" type="button" id="btnExercicio12">Exibir</button>
+
+          <div class="exercicioResultado">
+            <h3 class="resultadoTitulo">Resultado:</h3>
+            <div class="solucaoResultadoExercicio" id="solucaoResultadoExercicio12"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exercicioBox oculto" id="exercicio13">
+        <h2 class="exercicioTitulo">Mesclar Arrays</h2>
+        <p class="exercicioDescricao"> -Crie uma arrow function que receba dois arrays e retorne um novo array contendo todos os elementos dos dois arrays, sem duplicatas.</p>
+        <div class="exercicioSolucao">
+          <h3 class="subtituloExercicio">Array Original:</h3>
+          <p class="textoExercicio" id="textoExercicio13"></p>
+
+          <h3 class="subtituloExercicio">Inclua Elementos:</h3>
+          <input type="number" name="numero13" id="numeroExercicio13" class="inputExercicio" placeholder="Número">
+
+
+          <button class="btnExercicio" type="button" id="btnExercicio13">Incluir</button>
+
+          <div class="exercicioResultado">
+            <h3 class="resultadoTitulo">Resultado:</h3>
+            <div class="solucaoResultadoExercicio" id="solucaoResultadoExercicio13"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exercicioBox oculto" id="exercicio14">
+        <h2 class="exercicioTitulo">Contar Ocorrências</h2>
+        <p class="exercicioDescricao"> -Crie uma arrow function que receba uma string e retorne um objeto com a contagem de cada caractere na string.</p>
+        <div class="exercicioSolucao">
+          
+          <!-- <h3 class="subtituloExercicio">Array Original:</h3>
+          <p class="textoExercicio" id="textoExercicio14"></p> -->
+
+          <h3 class="subtituloExercicio">Inclua Elementos:</h3>
+          <input type="text" name="texto14" id="textoExercicio14" class="inputExercicio" placeholder="Número">
+
+
+          <button class="btnExercicio" type="button" id="btnExercicio14">Verificar</button>
+
+          <div class="exercicioResultado">
+            <h3 class="resultadoTitulo">Resultado:</h3>
+            <div class="solucaoResultadoExercicio" id="solucaoResultadoExercicio14"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exercicioBox oculto" id="exercicio15">
+        <h2 class="exercicioTitulo">Compor Funções</h2>
+        <p class="exercicioDescricao"> -Crie uma arrow function que receba duas funções `f` e `g` e retorne uma nova função que represente a composição `f(g(x))`.</p>
+        <div class="exercicioSolucao">
+
+          <!-- <h3 class="subtituloExercicio">Array Original:</h3>
+          <p class="textoExercicio" id="textoExercicio15"></p> -->
+
+          <h3 class="subtituloExercicio">Número:</h3>
+          <input type="text" name="texto14" id="textoExercicio15" class="inputExercicio" placeholder="Número">
+
+
+          <button class="btnExercicio" type="button" id="btnExercicio15">Verificar</button>
+
+          <div class="exercicioResultado">
+            <h3 class="resultadoTitulo">Resultado:</h3>
+            <div class="solucaoResultadoExercicio" id="solucaoResultadoExercicio15"></div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+  </main>
+
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
