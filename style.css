@@ -57,12 +57,12 @@ main {
 
 .exercicio {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .exercicioBox {
   width: 100%;
-  min-height: 50vh;
+  min-height: 30vh;
   height: auto;
   border: 2px dotted var(--cor-destaque);
   padding: 5px 10px;
